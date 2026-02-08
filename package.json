@@ -29,11 +29,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/triddle/work-with-me.git"
+    "url": "git+https://github.com/TannerDrayton/work-with-me.git"
   },
-  "homepage": "https://github.com/triddle/work-with-me",
+  "homepage": "https://github.com/TannerDrayton/work-with-me",
   "bugs": {
-    "url": "https://github.com/triddle/work-with-me/issues"
+    "url": "https://github.com/TannerDrayton/work-with-me/issues"
   },
   "engines": {
     "node": ">=16.7.0"
@@ -44,6 +44,7 @@
   },
   "scripts": {
     "build:hooks": "node scripts/build-hooks.js",
+    "prepare": "npm run build:hooks",
     "prepublishOnly": "npm run build:hooks",
     "test": "node --test work-with-me/bin/wwm-tools.test.js"
   },
