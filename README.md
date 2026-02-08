@@ -4,9 +4,6 @@
 
 **A collaborative development system for working together with Claude Code - thoughtful planning, transparent execution, and true partnership.**
 
-**Transform "Claude writes code for you" into "we build together" — with context engineering that keeps the collaboration meaningful throughout.**
-
-[![GitHub stars](https://img.shields.io/github/stars/TannerDrayton/work-with-me?style=for-the-badge&logo=github&color=181717)](https://github.com/TannerDrayton/work-with-me)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 [![Install Method](https://img.shields.io/badge/install-GitHub-success?style=for-the-badge&logo=github)](https://github.com/TannerDrayton/work-with-me#getting-started)
 
