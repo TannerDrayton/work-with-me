@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Claude Code Statusline - GSD Edition
+// Claude Code Statusline - Work With Me Edition
 // Shows: model | current task | directory | context usage
 
 const fs = require('fs');
