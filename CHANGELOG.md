@@ -6,6 +6,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+- **Install method:** Updated to GitHub-based installation (`npx github:TannerDrayton/work-with-me`)
+- Repository URLs corrected from `triddle` to `TannerDrayton` throughout
+- Update workflow now checks GitHub for latest version instead of npm
+- Added `prepare` script to build hooks automatically on git install
+
 ## [2.0.0] - 2026-02-08
 
 ### Changed
@@ -17,7 +23,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **Checkpoints:** Shifted from blocking gates to collaboration points
 - **Documentation:** Complete rewrite of README.md with collaborative philosophy
 - Repository metadata: package name, description, keywords, repository URLs
-- Install command: `npx work-with-me@latest` (was `npx get-shit-done-cc`)
+- Install command: `npx github:TannerDrayton/work-with-me` (was `npx get-shit-done-cc`)
 
 ### Added
 - New README section: "Why This Approach" explaining fork rationale

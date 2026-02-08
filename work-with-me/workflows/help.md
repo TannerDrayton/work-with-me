@@ -18,7 +18,7 @@ Display the complete WWM command reference. Output ONLY the reference content. D
 WWM evolves fast. Update periodically:
 
 ```bash
-npx work-with-me-cc@latest
+npx github:TannerDrayton/work-with-me
 ```
 
 ## Core Workflow
@@ -322,7 +322,7 @@ Update WWM to latest version with changelog preview.
 - Displays changelog entries for versions you've missed
 - Highlights breaking changes
 - Confirms before running install
-- Better than raw `npx work-with-me-cc`
+- Better than raw `npx github:TannerDrayton/work-with-me`
 
 Usage: `/wwm:update`
 

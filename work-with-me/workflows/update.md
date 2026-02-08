@@ -1,5 +1,5 @@
 <purpose>
-Check for WWM updates via npm, display changelog for versions between installed and latest, obtain user confirmation, and execute clean installation with cache clearing.
+Check for WWM updates via GitHub, display changelog for versions between installed and latest, obtain user confirmation, and execute clean installation with cache clearing.
 </purpose>
 
 <required_reading>
@@ -44,17 +44,17 @@ Proceed to install step (treat as version 0.0.0 for comparison).
 </step>
 
 <step name="check_latest_version">
-Check npm for latest version:
+Check GitHub for latest version:
 
 ```bash
-npm view work-with-me-cc version 2>/dev/null
+curl -s https://raw.githubusercontent.com/TannerDrayton/work-with-me/main/package.json | grep -o '"version": "[^"]*"' | cut -d'"' -f4
 ```
 
-**If npm check fails:**
+**If GitHub check fails:**
 ```
-Couldn't check for updates (offline or npm unavailable).
+Couldn't check for updates (offline or GitHub unavailable).
 
-To update manually: `npx work-with-me-cc --global`
+To update manually: `npx github:TannerDrayton/work-with-me --global`
 ```
 
 Exit.
@@ -146,12 +146,12 @@ Run the update using the install type detected in step 1:
 
 **If LOCAL install:**
 ```bash
-npx work-with-me-cc --local
+npx github:TannerDrayton/work-with-me --local
 ```
 
 **If GLOBAL install (or unknown):**
 ```bash
-npx work-with-me-cc --global
+npx github:TannerDrayton/work-with-me --global
 ```
 
 Capture output. If install fails, show error and exit.
@@ -179,7 +179,7 @@ Format completion message (changelog was already shown in confirmation step):
 
 ⚠️  Restart Claude Code to pick up the new commands.
 
-[View full changelog](https://github.com/glittercowboy/work-with-me/blob/main/CHANGELOG.md)
+[View full changelog](https://github.com/TannerDrayton/work-with-me/blob/main/CHANGELOG.md)
 ```
 </step>
 
@@ -202,7 +202,7 @@ Run /wwm:reapply-patches to merge your modifications into the new version.
 
 <success_criteria>
 - [ ] Installed version read correctly
-- [ ] Latest version checked via npm
+- [ ] Latest version checked via GitHub
 - [ ] Update skipped if already current
 - [ ] Changelog fetched and displayed BEFORE update
 - [ ] Clean install warning shown
