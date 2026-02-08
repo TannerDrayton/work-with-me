@@ -1,14 +1,14 @@
 {
-  "name": "get-shit-done-cc",
-  "version": "1.18.0",
-  "description": "A meta-prompting, context engineering and spec-driven development system for Claude Code, OpenCode and Gemini by TÂCHES.",
+  "name": "work-with-me",
+  "version": "2.0.0",
+  "description": "A collaborative development system for working together with Claude Code - thoughtful planning, transparent execution, and true partnership.",
   "bin": {
-    "get-shit-done-cc": "bin/install.js"
+    "work-with-me": "bin/install.js"
   },
   "files": [
     "bin",
     "commands",
-    "get-shit-done",
+    "work-with-me",
     "agents",
     "hooks/dist",
     "scripts"
@@ -17,21 +17,23 @@
     "claude",
     "claude-code",
     "ai",
+    "collaborative-development",
+    "pair-programming",
     "meta-prompting",
     "context-engineering",
-    "spec-driven-development",
+    "ai-collaboration",
     "gemini",
     "gemini-cli"
   ],
-  "author": "TÂCHES",
+  "author": "triddle (forked from TÂCHES)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/glittercowboy/get-shit-done.git"
+    "url": "git+https://github.com/triddle/work-with-me.git"
   },
-  "homepage": "https://github.com/glittercowboy/get-shit-done",
+  "homepage": "https://github.com/triddle/work-with-me",
   "bugs": {
-    "url": "https://github.com/glittercowboy/get-shit-done/issues"
+    "url": "https://github.com/triddle/work-with-me/issues"
   },
   "engines": {
     "node": ">=16.7.0"
@@ -43,6 +45,7 @@
   "scripts": {
     "build:hooks": "node scripts/build-hooks.js",
     "prepublishOnly": "npm run build:hooks",
-    "test": "node --test get-shit-done/bin/gsd-tools.test.js"
-  }
+    "test": "node --test work-with-me/bin/wwm-tools.test.js"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }

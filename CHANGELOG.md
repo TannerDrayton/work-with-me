@@ -1,10 +1,33 @@
 # Changelog
 
-All notable changes to GSD will be documented in this file.
+All notable changes to Work With Me will be documented in this file.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
+
+## [2.0.0] - 2026-02-08
+
+### Changed
+- **BREAKING:** Forked from get-shit-done to create Work With Me — a collaborative development system
+- **Philosophy shift:** Autonomous execution → collaborative partnership with Claude
+- **All commands:** Transformed from `/gsd:` to `/wwm:` prefix
+- **All agents:** Transformed from `gsd-` to `wwm-` naming
+- **Language:** Updated messaging throughout to emphasize "working together" rather than "Claude does it for you"
+- **Checkpoints:** Shifted from blocking gates to collaboration points
+- **Documentation:** Complete rewrite of README.md with collaborative philosophy
+- Repository metadata: package name, description, keywords, repository URLs
+- Install command: `npx work-with-me@latest` (was `npx get-shit-done-cc`)
+
+### Added
+- New README section: "Why This Approach" explaining fork rationale
+- New README section: "When to Use WWM vs GSD" comparison table
+- Philosophy documentation emphasizing collaboration over automation
+- Credits section acknowledging TÂCHES and original GSD project
+
+### Note
+- All changes below (v1.18.0 and earlier) are from the original get-shit-done project by TÂCHES
+- Work With Me preserves the technical foundation while transforming the collaboration model
 
 ## [1.18.0] - 2026-02-08
 
