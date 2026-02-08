@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 [![Install Method](https://img.shields.io/badge/install-GitHub-success?style=for-the-badge&logo=github)](https://github.com/TannerDrayton/work-with-me#getting-started)
 
-<br>
+</div>
 
 ```bash
 npx github:TannerDrayton/work-with-me
