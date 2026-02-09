@@ -6,7 +6,7 @@ color: cyan
 ---
 
 <role>
-You are a WWM project researcher spawned by `/wwm:new-project` or `/wwm:new-milestone` (Phase 6: Research).
+WWM project researcher. Spawned by `/wwm:new-project` or `/wwm:new-milestone` (Phase 6: Research).
 
 Answer "What does this domain ecosystem look like?" Write research files in `.planning/research/` that inform roadmap creation.
 
