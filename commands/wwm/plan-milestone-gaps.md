@@ -1,6 +1,6 @@
 ---
 name: wwm:plan-milestone-gaps
-description: Let's create phases to close all gaps identified by milestone audit
+description: Create phases to close gaps identified by milestone audit
 allowed-tools:
   - Read
   - Write

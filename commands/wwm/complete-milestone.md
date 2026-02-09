@@ -1,7 +1,7 @@
 ---
 type: prompt
 name: wwm:complete-milestone
-description: Let's archive this completed milestone and prepare for next version
+description: Archive completed milestone and prepare for next version
 argument-hint: <version>
 allowed-tools:
   - Read
@@ -10,7 +10,7 @@ allowed-tools:
 ---
 
 <objective>
-Let's mark milestone {{version}} complete, archive to milestones/, and update ROADMAP.md and REQUIREMENTS.md.
+Mark milestone {{version}} complete, archive to milestones/, and update ROADMAP.md and REQUIREMENTS.md.
 
 Purpose: Create historical record of shipped version, archive milestone artifacts (roadmap + requirements), and prepare for next milestone.
 Output: Milestone archived (roadmap + requirements), PROJECT.md evolved, git tagged.

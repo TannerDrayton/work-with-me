@@ -1,6 +1,6 @@
 ---
 name: wwm:check-todos
-description: Let's review our pending todos and pick one to work on
+description: Review pending todos and pick one to work on
 argument-hint: [area filter]
 allowed-tools:
   - Read
@@ -10,7 +10,7 @@ allowed-tools:
 ---
 
 <objective>
-Let's list all pending todos together, select one, load its full context, and decide what to do with it.
+List pending todos, select one, load full context, and route to action.
 
 Routes to the check-todos workflow which handles:
 - Todo counting and listing with area filtering

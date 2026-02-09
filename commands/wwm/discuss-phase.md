@@ -1,6 +1,6 @@
 ---
 name: wwm:discuss-phase
-description: Work together to clarify your vision for a phase through conversation before we plan
+description: Clarify phase vision through conversation before planning
 argument-hint: "<phase>"
 allowed-tools:
   - Read
@@ -12,15 +12,15 @@ allowed-tools:
 ---
 
 <objective>
-Let's explore implementation decisions together - what we decide here guides our work ahead.
+Explore implementation decisions before planning — what gets decided here guides execution.
 
-**How it works:**
-1. I'll analyze the phase to identify gray areas (UI, UX, behavior, etc.)
-2. You select which areas you'd like to discuss
-3. We'll explore each area together until you're satisfied
-4. I'll create a CONTEXT.md that captures our decisions to guide the work ahead
+**Flow:**
+1. Analyze the phase to identify gray areas (UI, UX, behavior, etc.)
+2. User selects which areas to discuss
+3. Explore each area until user is satisfied
+4. Create CONTEXT.md capturing decisions to guide execution
 
-**Output:** `{phase}-CONTEXT.md` — clear decisions that help us work together without needing to re-discuss
+**Output:** `{phase}-CONTEXT.md` — locked decisions, deferred ideas, and discretion areas
 </objective>
 
 <execution_context>
@@ -43,33 +43,33 @@ Phase number: $ARGUMENTS (required)
 2. Check if CONTEXT.md exists (offer update/view/skip if yes)
 3. **Analyze phase** — Identify domain and generate phase-specific gray areas
 4. **Present gray areas** — Multi-select: which would you like to discuss? (NO skip option)
-5. **Explore each area together** — 4 questions per area, then I'll check: "More questions about [area], or ready to move to the next?"
-6. **Write CONTEXT.md** — Sections match areas we discussed
-7. Offer next steps (research or plan together)
+5. **Explore each area** — 4 questions per area, then check: "More questions about [area], or ready to move to the next?"
+6. **Write CONTEXT.md** — Sections match areas discussed
+7. Offer next steps (research or plan)
 
 **CRITICAL: Scope guardrail**
 - Phase boundary from ROADMAP.md is FIXED
-- Our discussion clarifies HOW to implement, not WHETHER to add more
-- If you suggest new capabilities: "That sounds like its own phase - let me note it so we can plan for it later."
-- I'll capture deferred ideas — we won't lose them, but we won't act on them now
+- Discussion clarifies HOW to implement, not WHETHER to add more
+- If user suggests new capabilities: "That sounds like its own phase — noting it as a deferred idea."
+- Deferred ideas are captured, not lost — but not acted on now
 
 **Domain-aware gray areas:**
-Gray areas depend on what's being built. I'll analyze the phase goal:
+Gray areas depend on what's being built. Analyze the phase goal:
 - Something users SEE → layout, density, interactions, states
 - Something users CALL → responses, errors, auth, versioning
 - Something users RUN → output format, flags, modes, error handling
 - Something users READ → structure, tone, depth, flow
 - Something being ORGANIZED → criteria, grouping, naming, exceptions
 
-I'll generate 3-4 **phase-specific** gray areas, not generic categories.
+Generate 3-4 **phase-specific** gray areas, not generic categories.
 
 **Probing depth:**
-- I'll ask 4 questions per area before checking in
+- Ask 4 questions per area before checking in
 - "More questions about [area], or move to next?"
-- If more → I'll ask 4 more, check again
-- After all areas → "Ready to create our context document?"
+- If more → ask 4 more, check again
+- After all areas → "Ready to create the context document?"
 
-**What I'll handle (you don't need to decide):**
+**Claude handles (user doesn't decide):**
 - Technical implementation details
 - Architecture choices
 - Performance concerns
@@ -78,9 +78,9 @@ I'll generate 3-4 **phase-specific** gray areas, not generic categories.
 
 <success_criteria>
 - Gray areas identified through intelligent analysis
-- You chose which areas to discuss
-- Each selected area explored until you're satisfied
+- User chose which areas to discuss
+- Each selected area explored until user is satisfied
 - Scope creep redirected to deferred ideas
-- CONTEXT.md captures our decisions, not vague vision
-- You know what's next in our collaboration
+- CONTEXT.md captures concrete decisions, not vague vision
+- Next steps are clear
 </success_criteria>

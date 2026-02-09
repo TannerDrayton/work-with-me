@@ -1,6 +1,6 @@
 ---
 name: wwm:settings
-description: Configure our workflow preferences together
+description: Configure workflow preferences
 allowed-tools:
   - Read
   - Write
@@ -9,7 +9,7 @@ allowed-tools:
 ---
 
 <objective>
-Let's configure our workflow settings together via interactive prompts.
+Configure workflow settings via interactive prompts.
 
 Routes to the settings workflow which handles:
 - Config existence ensuring

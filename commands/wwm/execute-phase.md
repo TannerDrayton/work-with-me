@@ -1,6 +1,6 @@
 ---
 name: wwm:execute-phase
-description: Let's work through this phase together with wave-based parallelization
+description: Execute phase with wave-based parallelization
 argument-hint: "<phase-number> [--gaps-only]"
 allowed-tools:
   - Read
@@ -14,9 +14,9 @@ allowed-tools:
   - AskUserQuestion
 ---
 <objective>
-Let's work through this phase together using wave-based parallel execution.
+Execute phase using wave-based parallel execution.
 
-I'll coordinate our work: discover plans, analyze dependencies, group into waves, spawn subagents, collect results. Each subagent loads the full execute-plan context and handles its own plan.
+Orchestrator discovers plans, analyzes dependencies, groups into waves, spawns subagents, collects results. Each subagent loads the full execute-plan context and handles its own plan.
 
 Context budget: ~15% orchestrator, 100% fresh per subagent.
 </objective>

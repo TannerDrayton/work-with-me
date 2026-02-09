@@ -1,6 +1,6 @@
 ---
 name: wwm:add-todo
-description: Let's capture an idea or task for later
+description: Capture an idea or task for later
 argument-hint: [optional description]
 allowed-tools:
   - Read
@@ -10,7 +10,7 @@ allowed-tools:
 ---
 
 <objective>
-Let's capture an idea, task, or issue that surfaces during our session as a structured todo for later work.
+Capture an idea, task, or issue that surfaces during a session as a structured todo for later work.
 
 Routes to the add-todo workflow which handles:
 - Directory structure creation

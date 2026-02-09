@@ -1,6 +1,6 @@
 ---
 name: wwm:new-project
-description: Let's set up a new project together with thoughtful planning
+description: Initialize a new project with structured planning
 argument-hint: "[--auto]"
 allowed-tools:
   - Read
@@ -15,17 +15,17 @@ allowed-tools:
 </context>
 
 <objective>
-Let's initialize a new project together through: questioning → research (optional) → requirements → roadmap.
+Initialize a new project through: questioning → research (optional) → requirements → roadmap.
 
-**We'll create:**
-- `.planning/PROJECT.md` — our project context
-- `.planning/config.json` — your workflow preferences
+**Creates:**
+- `.planning/PROJECT.md` — project context
+- `.planning/config.json` — workflow preferences
 - `.planning/research/` — domain research (optional)
 - `.planning/REQUIREMENTS.md` — scoped requirements
 - `.planning/ROADMAP.md` — phase structure
 - `.planning/STATE.md` — project memory
 
-**After this command:** Run `/wwm:plan-phase 1` to start working together.
+**After this command:** Run `/wwm:plan-phase 1` to begin phase planning.
 </objective>
 
 <execution_context>

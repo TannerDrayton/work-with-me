@@ -1,6 +1,6 @@
 ---
 name: wwm:remove-phase
-description: Let's remove a phase we've decided not to do and renumber subsequent phases
+description: Remove a phase and renumber subsequent phases
 argument-hint: <phase-number>
 allowed-tools:
   - Read

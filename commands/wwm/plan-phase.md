@@ -1,6 +1,6 @@
 ---
 name: wwm:plan-phase
-description: Let's create a plan for this phase together (PLAN.md) with verification loop
+description: Create phase plan (PLAN.md) with verification loop
 argument-hint: "[phase] [--research] [--skip-research] [--gaps] [--skip-verify]"
 agent: wwm-planner
 allowed-tools:

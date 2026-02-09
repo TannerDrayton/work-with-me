@@ -1,6 +1,6 @@
 ---
 name: wwm:pause-work
-description: Let's save our progress so we can pick up exactly where we left off
+description: Save progress for later resumption
 allowed-tools:
   - Read
   - Write
@@ -8,7 +8,7 @@ allowed-tools:
 ---
 
 <objective>
-Let's create a `.continue-here.md` handoff file to preserve our complete work state across sessions.
+Create a `.continue-here.md` handoff file to preserve work state across sessions.
 
 Routes to the pause-work workflow which handles:
 - Current phase detection from recent files

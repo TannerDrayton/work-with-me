@@ -1,6 +1,6 @@
 ---
 name: wwm:set-profile
-description: Switch model profile for our collaboration (quality/balanced/budget)
+description: Switch model profile (quality/balanced/budget)
 argument-hint: <profile>
 allowed-tools:
   - Read
@@ -9,7 +9,7 @@ allowed-tools:
 ---
 
 <objective>
-Let's switch the model profile we use together. Controls which Claude model each helper agent uses, balancing quality vs token spend.
+Switch model profile. Controls which Claude model each agent uses, balancing quality vs token spend.
 
 Routes to the set-profile workflow which handles:
 - Argument validation (quality/balanced/budget)

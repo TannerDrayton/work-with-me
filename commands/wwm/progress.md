@@ -1,6 +1,6 @@
 ---
 name: wwm:progress
-description: Let's check where we are and decide what to work on next
+description: Check project status and route to next action
 allowed-tools:
   - Read
   - Bash
@@ -9,9 +9,9 @@ allowed-tools:
   - SlashCommand
 ---
 <objective>
-Let's check our progress together, review recent work and what's ahead, then decide on the next action - either working on an existing plan or creating a new one.
+Check project progress, review recent work and what's ahead, then route to next action.
 
-Provides us both with situational awareness before continuing our collaboration.
+Provides situational awareness before continuing work.
 </objective>
 
 <execution_context>

@@ -7,7 +7,7 @@ allowed-tools:
 ---
 
 <objective>
-Let's check for updates, install if available, and see what changed.
+Check for updates, install if available, and display changelog.
 
 Routes to the update workflow which handles:
 - Version detection (local vs global installation)

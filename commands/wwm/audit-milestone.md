@@ -1,6 +1,6 @@
 ---
 name: wwm:audit-milestone
-description: Let's verify our milestone achieved its goals against original intent before archiving
+description: Verify milestone achieved its goals against original intent before archiving
 argument-hint: "[version]"
 allowed-tools:
   - Read
@@ -11,7 +11,7 @@ allowed-tools:
   - Write
 ---
 <objective>
-Let's verify our milestone achieved its definition of done. Check requirements coverage, cross-phase integration, and end-to-end flows.
+Verify milestone achieved its definition of done. Check requirements coverage, cross-phase integration, and end-to-end flows.
 
 **This command IS the orchestrator.** Reads existing VERIFICATION.md files (phases already verified during execute-phase), aggregates tech debt and deferred gaps, then spawns integration checker for cross-phase wiring.
 </objective>

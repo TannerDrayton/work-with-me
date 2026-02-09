@@ -1,6 +1,6 @@
 ---
 name: wwm:resume-work
-description: Let's pick up where we left off with full context
+description: Resume work with full context restoration
 allowed-tools:
   - Read
   - Bash
@@ -10,7 +10,7 @@ allowed-tools:
 ---
 
 <objective>
-Let's restore our complete project context and resume work seamlessly from our previous session.
+Restore complete project context and resume from previous session.
 
 Routes to the resume-project workflow which handles:
 

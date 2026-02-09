@@ -1,6 +1,6 @@
 ---
 name: wwm:debug
-description: Let's investigate issues together using systematic debugging
+description: Investigate issues using systematic debugging
 argument-hint: [issue description]
 allowed-tools:
   - Read
@@ -10,15 +10,15 @@ allowed-tools:
 ---
 
 <objective>
-Let's debug issues together using scientific method with subagent isolation.
+Debug issues using scientific method with subagent isolation.
 
-**My role:** Gather your symptoms, spawn a specialized debugger agent, handle checkpoints, coordinate the investigation.
+**Orchestrator role:** Gather symptoms, spawn specialized debugger agent, handle checkpoints, coordinate investigation.
 
-**Why subagent:** Investigation burns context fast (reading files, forming hypotheses, testing). Fresh 200k context per investigation keeps our main conversation focused on working together.
+**Why subagent:** Investigation burns context fast (reading files, forming hypotheses, testing). Fresh 200k context per investigation preserves main conversation context.
 </objective>
 
 <context>
-Your issue: $ARGUMENTS
+Issue: $ARGUMENTS
 
 Check for active sessions:
 ```bash
@@ -42,7 +42,7 @@ DEBUGGER_MODEL=$(node ~/.claude/work-with-me/bin/wwm-tools.js resolve-model wwm-
 ## 1. Check Active Sessions
 
 If active sessions exist AND no $ARGUMENTS:
-- I'll list sessions with status, hypothesis, next action
+- List sessions with status, hypothesis, next action
 - You pick a number to resume OR describe a new issue
 
 If $ARGUMENTS provided OR you describe a new issue:
@@ -50,7 +50,7 @@ If $ARGUMENTS provided OR you describe a new issue:
 
 ## 2. Gather Symptoms (if new issue)
 
-I'll use AskUserQuestion for each:
+Use AskUserQuestion for each:
 
 1. **Expected behavior** - What should happen?
 2. **Actual behavior** - What happens instead?
@@ -58,7 +58,7 @@ I'll use AskUserQuestion for each:
 4. **Timeline** - When did this start? Ever worked?
 5. **Reproduction** - How do you trigger it?
 
-After we've gathered everything, I'll confirm we're ready to investigate.
+After gathering, confirm ready to investigate.
 
 ## 3. Spawn wwm-debugger Agent
 
@@ -101,19 +101,19 @@ Task(
 ## 4. Handle Agent Return
 
 **If `## ROOT CAUSE FOUND`:**
-- I'll show you the root cause and evidence summary
+- Show the root cause and evidence summary
 - Offer options:
-  - "Fix now" - let's fix it together
-  - "Plan fix" - suggest /wwm:plan-phase --gaps
-  - "Manual fix" - you've got it from here
+  - "Fix now" — proceed to fix
+  - "Plan fix" — route to /wwm:plan-phase --gaps
+  - "Manual fix" — user handles it
 
 **If `## CHECKPOINT REACHED`:**
-- I'll present checkpoint details to you
-- Get your response
+- Present checkpoint details
+- Get user response
 - Spawn continuation agent (see step 5)
 
 **If `## INVESTIGATION INCONCLUSIVE`:**
-- I'll show what was checked and eliminated
+- Show what was checked and eliminated
 - Offer options:
   - "Continue investigating" - spawn new agent with additional context
   - "Manual investigation" - you'll take it from here

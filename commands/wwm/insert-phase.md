@@ -1,6 +1,6 @@
 ---
 name: wwm:insert-phase
-description: Let's insert urgent work as decimal phase (e.g., 72.1) between existing phases
+description: Insert urgent work as decimal phase (e.g., 72.1) between existing phases
 argument-hint: <after> <description>
 allowed-tools:
   - Read
@@ -13,7 +13,7 @@ Insert a decimal phase for urgent work discovered mid-milestone that must be com
 
 Uses decimal numbering (72.1, 72.2, etc.) to preserve the logical sequence of planned phases while accommodating urgent insertions.
 
-Purpose: Let's handle urgent work discovered during execution without renumbering entire roadmap.
+Purpose: Handle urgent work discovered during execution without renumbering entire roadmap.
 </objective>
 
 <execution_context>

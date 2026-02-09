@@ -1,6 +1,6 @@
 ---
 name: wwm:add-phase
-description: Add a new phase to our roadmap together
+description: Add a new phase to the roadmap
 argument-hint: <description>
 allowed-tools:
   - Read

@@ -1,6 +1,6 @@
 ---
 name: wwm:research-phase
-description: Let's research how to implement a phase together (standalone - usually use /wwm:plan-phase instead)
+description: Research phase implementation (standalone - usually use /wwm:plan-phase instead)
 argument-hint: "[phase]"
 allowed-tools:
   - Read
@@ -9,18 +9,18 @@ allowed-tools:
 ---
 
 <objective>
-Let's research how to implement a phase. I'll spawn a specialized researcher agent with our phase context.
+Research phase implementation. Spawns specialized researcher agent with phase context.
 
 **Note:** This is a standalone research command. For most workflows, use `/wwm:plan-phase` which integrates research automatically.
 
 **Use this command when:**
-- You want to research without planning yet
-- You want to re-research after planning is complete
-- You need to investigate before deciding if a phase is feasible
+- Research without planning yet
+- Re-research after planning is complete
+- Investigate before deciding if a phase is feasible
 
-**My role:** Parse phase, validate against roadmap, check existing research, gather context, spawn researcher agent, present results to you.
+**Orchestrator role:** Parse phase, validate against roadmap, check existing research, gather context, spawn researcher agent, present results.
 
-**Why subagent:** Research burns context fast (WebSearch, Context7 queries, source verification). Fresh 200k context for investigation keeps our main conversation focused.
+**Why subagent:** Research burns context fast (WebSearch, Context7 queries, source verification). Fresh 200k context for investigation keeps main conversation focused.
 </objective>
 
 <context>
@@ -58,7 +58,7 @@ PHASE_INFO=$(node ~/.claude/work-with-me/bin/wwm-tools.js roadmap get-phase "${p
 ls .planning/phases/${PHASE}-*/RESEARCH.md 2>/dev/null
 ```
 
-**If exists:** I'll offer: 1) Update research, 2) View existing, 3) Skip. Wait for your response.
+**If exists:** Offer: 1) Update research, 2) View existing, 3) Skip. Wait for user response.
 
 **If doesn't exist:** Continue.
 
@@ -72,7 +72,7 @@ cat .planning/phases/${PHASE}-*/*-CONTEXT.md 2>/dev/null
 grep -A30 "### Decisions Made" .planning/STATE.md 2>/dev/null
 ```
 
-I'll present a summary with phase description, requirements, prior decisions.
+Present summary with phase description, requirements, prior decisions.
 
 ## 4. Spawn wwm-phase-researcher Agent
 
@@ -144,11 +144,11 @@ Task(
 
 ## 5. Handle Agent Return
 
-**`## RESEARCH COMPLETE`:** I'll display summary, offer: Plan phase, Dig deeper, Review full, Done.
+**`## RESEARCH COMPLETE`:** Display summary, offer: Plan phase, Dig deeper, Review full, Done.
 
-**`## CHECKPOINT REACHED`:** I'll present to you, get your response, spawn continuation.
+**`## CHECKPOINT REACHED`:** Present to user, get response, spawn continuation.
 
-**`## RESEARCH INCONCLUSIVE`:** I'll show what was attempted, offer: Add context, Try different mode, Manual.
+**`## RESEARCH INCONCLUSIVE`:** Show what was attempted, offer: Add context, Try different mode, Manual.
 
 ## 6. Spawn Continuation Agent
 
@@ -183,5 +183,5 @@ Task(
 - [ ] Existing research checked
 - [ ] wwm-phase-researcher spawned with context
 - [ ] Checkpoints handled correctly
-- [ ] You know next steps
+- [ ] Next steps communicated
 </success_criteria>
